@@ -15,7 +15,7 @@
 - JAVASCRIPT
 
 ## Live Demo
-[Live Demo Link]()
+[Live Demo Link](https://devtiwo.netlify.app/)
 
 
 ## Getting Started
