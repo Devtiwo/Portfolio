@@ -131,7 +131,7 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const errMsg = document.querySelector('.err');
 
-form.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   if (fName.value === '' || email.value === '' || message.value === '') {
     errMsg.textContent = '*All fields are required!';
     e.preventDefault();
@@ -140,3 +140,33 @@ form.addEventListener('click', (e) => {
     errMsg.textContent = '';
   }
 })
+
+// IMPLEMENTING LOCAL STORAGE FUNCTIONALITY
+
+const store = () => {
+  const localName = fName.value;
+  const localEmail = email.value;
+  const localMsg = message.value;
+
+  localStorage.setItem('name', localName);
+  localStorage.setItem('email', localEmail);
+  localStorage.setItem('message', localMsg);
+}
+
+const prefill = () => {
+  fName.value += localStorage.getItem('name');
+  email.value += localStorage.getItem('email');
+  message.value += localStorage.getItem('message');
+}
+
+if (localStorage.getItem('name')) {
+  prefill();
+} else {
+  store();
+}
+
+fName.onchange = store;
+email.onchange = store;
+message.onchange = store;
+
+form.addEventListener('submit', store, prefill);
