@@ -23,12 +23,12 @@ for (let i = 0; i < mobLinks.length; i++) {
 
 const projects = [{
     id: 1,
-    name: 'Profesional Art Printing Data',
-    image: 'images/sample.png',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['html', 'bootstrap', 'Ruby'],
-    live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
+    name: 'Conference Website',
+    image: 'images/conference.png',
+    desc: 'This project is a tech conference website that is aimed at bringing developers from all around the globe together. Users will be able to view the date and location of the event, access guest speaker\'s informaton and get information about upcoming events.',
+    lang: ['Html', 'Css', 'Javascript'],
+    live: 'https://devtiwo.github.io/Capstone-1/index.html',
+    source: 'https://github.com/Devtiwo/Capstone-1',
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const projects = [{
     name: 'full stack application',
     image: 'images/sample.png',
     desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['html', 'bootstrap', 'Ruby', 'Css'],
+    lang: ['html', 'bootstrap', 'Ruby', 'Css', 'sass'],
     live: 'https://devtiwo.github.io/Portfolio',
     source: 'https://github.com/Devtiwo/Portfolio',
   },
@@ -86,11 +86,6 @@ for (let i = 0; i < projects.length; i++) {
   const cardInfo = `
   <h2>${projects[i].name}</h2>
   <p>${projects[i].desc}</p>
-  <ul class="lang">
-    <li>${projects[i].lang[0]}</li>
-    <li>${projects[i].lang[1]}</li>
-    <li>${projects[i].lang[2]}</li>
-  </ul>
   <button id="${projects[i].id}" class="see-btn">see project</button>
   `;
   card.innerHTML = cardInfo;
@@ -103,11 +98,11 @@ document.querySelectorAll('.see-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
     const project = projects.find((p) => p.id === Number(btn.id));
     document.querySelector('#project-name').innerHTML = project.name;
-    document.querySelector('#lang').innerHTML = `
-      <li>${project.lang[0]}</li>
-      <li>${project.lang[1]}</li>
-      <li>${project.lang[2]}</li>
-    `;
+    let languages = '';
+    project.lang.forEach((tech) => {
+      languages += `<li>${tech}</li>`;
+    });
+    document.querySelector('#lang').innerHTML = languages;
     document.querySelector('#projectImage').setAttribute('src', project.image);
     document.querySelector('#projectDesc').innerHTML = project.desc;
     document.querySelector('#liveLink').setAttribute('href', project.live);

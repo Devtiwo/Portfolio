@@ -51,6 +51,18 @@ header h1 a {
   height: 100%;
   color: #2F67BA;
   list-style: none;
+  animation: slide-right 1s ease forwards;
+  left: 0;
+}
+
+@keyframes slide-right {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .mobile .fa-times {
@@ -86,7 +98,7 @@ header h1 a {
 
 .intro {
   padding: 80px 30px;
-  background: linear-gradient(295deg, #2FADBA, #2F67BA);
+  background: linear-gradient(295deg, #2FADBA 50%, #2F67BA);
   color: #fff;
   height: 500px;
   position: relative;
@@ -160,19 +172,7 @@ header h1 a {
 
 .cards h2 { margin-bottom: 40px; }
 
-.cards p {
-  margin-bottom: 20px;
-}
-
-.cards .lang {
-  display: flex;
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.cards .lang li {
-  padding-right: 10px;
-}
+.cards p { margin-bottom: 20px; }
 
 .cards button {
   padding: 10px;
@@ -348,6 +348,7 @@ footer .social-icons li { padding: 15px; }
   margin: 15% auto;
   padding: 50px 20px;
   position: relative;
+  border-radius: 20px;
 }
 
 .modal-content .fa-times {
@@ -361,13 +362,15 @@ footer .social-icons li { padding: 15px; }
 .modal-lang {
   display: flex;
   list-style: none;
-  margin: 30px 0;
+  margin: 25px 0;
+  flex-wrap: wrap;
 }
 
 .modal-lang li {
   padding: 10px;
   border: 1px solid #CACFD2;
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .modal-content img { width: 340px; }
@@ -423,7 +426,7 @@ footer .social-icons li { padding: 15px; }
 
   .intro {
     background-color: #2F67BA;
-    background-image: url("images/program.svg");
+    background-image: url("images/program.svg"), linear-gradient(295deg, #2FADBA 50%, #2F67BA);
     background-repeat: no-repeat;
     background-position: right center;
   }
@@ -478,6 +481,7 @@ footer .social-icons li { padding: 15px; }
     margin: 7% auto;
     padding: 50px 20px 20px 20px;
     position: relative;
+    border-radius: 20px;
   }
   .modal-content .modal-lang { margin: 15px 0; }
 
