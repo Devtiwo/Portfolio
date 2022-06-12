@@ -170,9 +170,11 @@ header h1 a {
   box-shadow: 5px 5px 5px 5px  #CACFD2;
 }
 
-.cards h2 { margin-bottom: 40px; }
+.cards footer { border: none; }
 
-.cards p { margin-bottom: 20px; }
+.cards h2 { margin-bottom: 30px; }
+
+.cards p { height: 150px; }
 
 .cards button {
   padding: 10px;
