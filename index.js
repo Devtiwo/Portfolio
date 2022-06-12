@@ -28,16 +28,16 @@ const projects = [{
     desc: 'This project is a tech conference website that is aimed at bringing developers from all around the globe together. Users will be able to view the date and location of the event, access guest speaker\'s informaton and get information about upcoming events.',
     lang: ['Html', 'Css', 'Javascript'],
     live: 'https://devtiwo.github.io/Capstone-1/index.html',
-    source: 'https://github.com/Devtiwo/Capstone-1',
+    source: 'https://github.com/Devtiwo/Capstone-1'
   },
   {
     id: 2,
-    name: 'Reddit client app',
-    image: 'images/sample.png',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['React', 'Redux', 'Ruby'],
-    live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
+    name: 'Jammming Playlist App',
+    image: 'images/jam1.png',
+    desc: 'Jammming is a playlist app that allows users to search the Spotify library using the spotify API, create a custom playlist, then save it to their Spotify account.',
+    lang: ['React', 'Spotify API'],
+    live: 'https://jammingplaylist.netlify.app',
+    source: 'https://github.com/Devtiwo/jamming'
   },
   {
     id: 3,
@@ -46,35 +46,35 @@ const projects = [{
     desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     lang: ['html', 'bootstrap', 'Ruby'],
     live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
-  },
-  {
-    id: 4,
-    name: 'Random quote generator',
-    image: 'images/sample.png',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['html', 'bootstrap', 'Ruby'],
-    live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
-  },
-  {
-    id: 5,
-    name: 'E-commerce app',
-    image: 'images/sample.png',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['html', 'bootstrap', 'Ruby'],
-    live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
-  },
-  {
-    id: 6,
-    name: 'full stack application',
-    image: 'images/sample.png',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    lang: ['html', 'bootstrap', 'Ruby', 'Css', 'sass'],
-    live: 'https://devtiwo.github.io/Portfolio',
-    source: 'https://github.com/Devtiwo/Portfolio',
-  },
+    source: 'https://github.com/Devtiwo/Portfolio'
+  }
+  // {
+  //   id: 4,
+  //   name: 'Random quote generator',
+  //   image: 'images/sample.png',
+  //   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  //   lang: ['html', 'bootstrap', 'Ruby'],
+  //   live: 'https://devtiwo.github.io/Portfolio',
+  //   source: 'https://github.com/Devtiwo/Portfolio'
+  // },
+  // {
+  //   id: 5,
+  //   name: 'E-commerce app',
+  //   image: 'images/sample.png',
+  //   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  //   lang: ['html', 'bootstrap', 'Ruby'],
+  //   live: 'https://devtiwo.github.io/Portfolio',
+  //   source: 'https://github.com/Devtiwo/Portfolio'
+  // },
+  // {
+  //   id: 6,
+  //   name: 'full stack application',
+  //   image: 'images/sample.png',
+  //   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  //   lang: ['html', 'bootstrap', 'Ruby', 'Css', 'sass'],
+  //   live: 'https://devtiwo.github.io/Portfolio',
+  //   source: 'https://github.com/Devtiwo/Portfolio'
+  // },
 ];
 
 //   CREATING PROJECT CARDS
@@ -83,10 +83,13 @@ const cardWrap = document.querySelector('.project-cards');
 for (let i = 0; i < projects.length; i++) {
   const card = document.createElement('article');
   card.className = 'cards';
-  const cardInfo = `
+  const cardInfo = `<div class="card-body">
   <h2>${projects[i].name}</h2>
   <p>${projects[i].desc}</p>
+  </div>
+  <footer>
   <button id="${projects[i].id}" class="see-btn">see project</button>
+  </footer>
   `;
   card.innerHTML = cardInfo;
   cardWrap.appendChild(card);
