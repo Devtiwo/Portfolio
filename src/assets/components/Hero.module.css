@@ -1,0 +1,44 @@
+.container {
+  height: 700px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #34353a;
+  padding: 150px 20px;
+}
+
+.container span {
+  color: #ffd070;
+}
+
+h3 {
+  color: #ffd070;
+}
+
+.container p {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+.container a {
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffd070;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.container a:hover {
+  background-color: #ffd070;
+  border: none;
+  color: #000000;
+  transition: ease-in-out 0.3s;
+}
+
+@media only screen and (min-width: 992px) {
+  .container p {
+    width: 60%;
+  }
+}
