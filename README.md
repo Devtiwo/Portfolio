@@ -2,7 +2,7 @@
 
 > This project is a personal portfolio website to showcase all other projects i will be building.
 
-![screenshot](images/portv2.png)
+![screenshot](public/images/portv2.png)
 
 ## Built With
 
