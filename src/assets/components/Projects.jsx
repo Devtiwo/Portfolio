@@ -8,20 +8,26 @@ const Projects = () => {
       name: "Conference Website",
       image: "images/conference.png",
       live: "https://devtiwo.github.io/Capstone-1/index.html",
-      source: "https://github.com/Devtiwo/Capstone-1",
+      source: "https://github.com/Devtiwo/Capstone-1"
     },
     {
       name: "Jamming Playlist App",
       image: "images/jam1.PNG",
       live: "https://jammingplaylist.netlify.app",
-      source: "https://github.com/Devtiwo/jamming",
+      source: "https://github.com/Devtiwo/jamming"
     },
     {
       name: "Personal Portfolio",
-      image: "images/port1.PNG",
-      live: "https://jammingplaylist.netlify.app",
-      source: "https://github.com/Devtiwo/jamming",
+      image: "images/portv2.png",
+      live: "https://devtiwo.netlify.app",
+      source: "https://github.com/Devtiwo/Portfolio"
     },
+    {
+      name: "LoanMart",
+      image: "images/loan.png",
+      live: "https://loan-mart.org",
+      source: "#private"
+    }
   ];
   return (
     <section id="projects" className={style.projectcon}>
