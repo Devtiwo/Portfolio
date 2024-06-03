@@ -104,7 +104,6 @@ const Hero = () => {
               "I also work with other technologies.",
               1000,
             ]}
-            wrapper="h3"
             speed={30}
             repeat={Infinity}
           />

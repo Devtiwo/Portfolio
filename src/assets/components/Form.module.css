@@ -1,0 +1,60 @@
+.form {
+  width: 90%;
+  height: auto;
+  margin: 30px 20px auto;
+  padding: 40px;
+  background-color: rgba(255,255,255, 0.03);
+}
+
+form label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 5px;
+  border: 1px solid #ffd070;
+  outline: none;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  background-color: transparent;
+}
+
+input[type="email"] {
+  background-color: transparent;
+}
+
+form textarea {
+  outline: none;
+  border: 1px solid #ffd070;
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+}
+
+form button {
+  border: none;
+  outline: none;
+  margin: 20px auto;
+  padding: 10px;
+  color: #000000;
+  background-color: #ffd070;
+  font-size: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
