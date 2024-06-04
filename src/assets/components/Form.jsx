@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Form.module.css";
 import { useFormik } from "formik";
 import axios from "axios";
 import * as yup from "yup";
+import Modal from "./Modal";
 
 const Form = () => {
+  const [showModal, setShowModal] = useState(false);
   const formik = useFormik({
     initialValues: {
       fullname: "",
       email: "",
-      message: "",
+      message: ""
     },
     validationSchema: yup.object({
       fullname: yup.string().required("Enter your Full Name"),
@@ -24,7 +26,7 @@ const Form = () => {
         .post("https://formspree.io/f/xgegjzwo", values)
         .then((response) => {
           if (response.status === 200) {
-            alert("Message sent successfully");
+            setShowModal(true);
             resetForm();
           } else {
             alert("Error sending message! pls try again");
@@ -36,6 +38,9 @@ const Form = () => {
         });
     },
   });
+  const handleCloseModal = () => {
+    setShowModal(false);
+  }
   return (
     <section>
       <form
@@ -94,6 +99,7 @@ const Form = () => {
           <button type="submit">Get in touch </button>
         </div>
       </form>
+      {<Modal show={showModal} onClose={handleCloseModal} />}
     </section>
   );
 };
