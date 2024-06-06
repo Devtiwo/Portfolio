@@ -96,7 +96,7 @@ const Form = () => {
           </small>
         </div>
         <div>
-          <button type="submit">Get in touch </button>
+          <button type="submit">Send Message </button>
         </div>
       </form>
       {<Modal show={showModal} onClose={handleCloseModal} />}

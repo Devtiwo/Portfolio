@@ -1,0 +1,21 @@
+.footwrap {
+  background-color: #34353a;
+}
+
+.iconwrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.abouticons {
+  font-size: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.abouticons:hover {
+  color: #ffd070;
+  transition: ease-in-out 0.3s;
+}
