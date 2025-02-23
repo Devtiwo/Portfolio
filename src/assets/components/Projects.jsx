@@ -25,7 +25,7 @@ const Projects = () => {
     {
       name: "LoanMart",
       image: "images/loan.png",
-      live: "https://loan-mart.org",
+      live: "https://loan-mart.netlify.app",
       source: "#private"
     }
   ];
