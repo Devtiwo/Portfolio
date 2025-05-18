@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className={style.aboutwrap}>
       <article>
-        <h1 className="display-1 fw-bold mx-5">About Me</h1>
+        <h1 className="display-1 fw-bold mx-3">About Me</h1>
         <p className="w-75">
           I am a self-taught full Stack web Developer who is passionate about
           creating beautiful, interactive, and user-friendly websites. With my
@@ -41,7 +41,7 @@ const About = () => {
         <div className={style.stack}>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
               alt="html5"
               width="100"
               height="100"
@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
               alt="css3"
               width="100"
               height="100"
@@ -57,7 +57,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
               alt="javascript"
               width="100"
               height="90"
@@ -81,7 +81,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
               alt="react"
               width="100"
               height="100"
@@ -89,7 +89,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
               alt="redux"
               width="100"
               height="100"
@@ -97,7 +97,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
               alt="mongoDB"
               width="100"
               height="100"
@@ -113,7 +113,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg"
               alt="nodejs"
               width="100"
               height="100"
@@ -129,7 +129,7 @@ const About = () => {
           </div>
           <div className={style.stackitems}>
             <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
               alt="express"
               width="100"
               height="100"

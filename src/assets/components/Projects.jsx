@@ -27,6 +27,18 @@ const Projects = () => {
       image: "images/loan.png",
       live: "https://loan-mart.netlify.app",
       source: "#private"
+    },
+    {
+      name: "Taikent Trust Bank",
+      image: "images/taikent.png",
+      live: "https://taikenttrust.vercel.app",
+      source: "#private"
+    },
+    {
+      name: "Taikent Investment",
+      image: "/images/crypto.png",
+      live: "taikentinvestments.com",
+      source: "#private"
     }
   ];
   return (

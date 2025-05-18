@@ -11,7 +11,7 @@ const Modal = ({ show, onClose }) => {
         <article className={style.modalcontent}>
         <GiCheckMark className={style.success} />
         <p className="mx-auto mt-5 mb-5">
-          Thanks for reaching out. I will get back in touch with you as soon as possible.
+          Thanks for reaching out. I'll get back to you as soon as possible.
         </p>
         <button type="button" className={style.modalbtn} onClick={closeModal}>Ok</button>
         </article>
