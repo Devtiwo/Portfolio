@@ -37,7 +37,7 @@ const Projects = () => {
     {
       name: "Taikent Investment",
       image: "/images/crypto.png",
-      live: "taikentinvestments.com",
+      live: "https://taikentinvestments.com",
       source: "#private"
     }
   ];
