@@ -113,7 +113,7 @@ const Hero = () => {
           recent works and experience.If you like what you see and you need any
           project coded,feel free to contact me.
         </p>
-        <a href='' target='_blank'>See my Resume</a>
+        <a href='https://drive.google.com/file/d/1GATYxgXtTyOaRgE5wTnXWH5XFxqpWxgG/view' target='_blank'>See my Resume</a>
       </article>
     </section>
   );
